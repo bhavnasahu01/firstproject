@@ -6,10 +6,10 @@ namespace BulkyWeb.Models
 {
 	public class Category
 	{
-        //[Key]   it will definied the primary key 
+        [Key] //it will definied the primary key 
 	    public int Id { get; set; }
 
-        //[Required] name is required 
+        [Required] //name is required 
         public string Name { get; set; }
         public int DisplayOrder { get; set;
         }
