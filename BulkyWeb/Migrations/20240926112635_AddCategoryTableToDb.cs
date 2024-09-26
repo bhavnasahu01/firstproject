@@ -14,8 +14,7 @@ namespace BulkyWeb.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    //Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Name = table.Column<string>(type: "varchar(255)", nullable: false), // Change here
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DisplayOrder = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -31,19 +30,3 @@ namespace BulkyWeb.Migrations
         }
     }
 }
-
-
-
-//migrationBuilder.CreateTable(
-//    name: "Categories",
-//    columns: table => new
-//    {
-//        Id = table.Column<int>(nullable: false)
-//            .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-//        MaxValue = table.Column<int>(nullable: false), // Change 'max' to 'MaxValue'
-//        DisplayOrder = table.Column<int>(nullable: false)
-//    },
-//    constraints: table =>
-//    {
-//        table.PrimaryKey("PK_Categories", x => x.Id);
-//    });

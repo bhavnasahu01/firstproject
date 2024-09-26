@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BulkyWeb.Controllers
 {
-    public class UserController : Controller
+    public class CategoryController : Controller
     {
         // GET: /<controller>/
         public IActionResult Index()
