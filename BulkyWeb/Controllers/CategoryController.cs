@@ -30,10 +30,29 @@ namespace BulkyWeb.Controllers
         {
             return View();
         }
-
-        public IActionResult Contact()
+        [HttpPost]
+        public IActionResult Create(Category obj)
         {
+            if(obj.Name == obj.DisplayOrder.ToString())
+            {
+                ModelState.AddModelError("Name", "The displayorder canot exactly match the Name");
+            }
+            if (obj.Name.ToLower() == "test")
+            {
+                ModelState.AddModelError("", "Test is an Invalid value");
+            }
+
+            if (ModelState.IsValid)
+            {
+                _db.Categories.Add(obj);
+                _db.SaveChanges();
+                //return View();  // because it will go to create view
+
+                return RedirectToAction("Index"); // we need to go for index after creating so we used redirectToAction method
+
+            }
             return View();
+            
         }
     }
 }
