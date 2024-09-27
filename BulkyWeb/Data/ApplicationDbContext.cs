@@ -23,7 +23,7 @@ namespace BulkyWeb.Data
                 new Category { Id = 3, Name = "History", DisplayOrder = 3},
                 new Category { Id = 4, Name = "Book", DisplayOrder = 4});
 
-           // base.OnModelCreating(modelBuilder);
+           
         }
 
 
