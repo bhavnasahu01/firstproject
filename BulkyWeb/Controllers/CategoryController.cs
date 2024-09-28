@@ -49,6 +49,7 @@ namespace BulkyWeb.Controllers
                 _db.Categories.Add(obj);
                 _db.SaveChanges();
                 //return View();  // because it will go to create view
+                TempData["success"] = "Category Created Succesfully";
 
                 return RedirectToAction("Index"); // we need to go for index after creating so we used redirectToAction method
 
@@ -87,6 +88,7 @@ namespace BulkyWeb.Controllers
                 _db.Categories.Update(obj);
                 _db.SaveChanges();
                 //return View();  // because it will go to create view
+                TempData["success"] = "Category Edit Succesfully";
 
                 return RedirectToAction("Index"); // we need to go for index after creating so we used redirectToAction method
 
@@ -126,6 +128,8 @@ namespace BulkyWeb.Controllers
 
                 _db.Categories.Remove(obj);
                 _db.SaveChanges();
+
+                TempData["success"] = "Category Deleted Succesfully";
 
                 return RedirectToAction("Index"); // we need to go for index after creating so we used redirectToAction method
 
