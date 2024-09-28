@@ -88,7 +88,7 @@ namespace BulkyWeb.Controllers
                 _db.Categories.Update(obj);
                 _db.SaveChanges();
                 //return View();  // because it will go to create view
-                TempData["success"] = "Category Edit Succesfully";
+                TempData["success"] = "Category Updated Succesfully";
 
                 return RedirectToAction("Index"); // we need to go for index after creating so we used redirectToAction method
 

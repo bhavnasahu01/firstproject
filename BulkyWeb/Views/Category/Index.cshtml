@@ -1,9 +1,8 @@
 ﻿@model List<Category>
-@if (TempData["success"] != null)
-{
-    <h2>@TempData["success"]</h2>
-}
 
+@*Add the notification partial view it will display the msg like created succesfully and updated and deleted successfully*@
+
+<partial name="_NotificationPartial"/>
 <div class="container">
 
     <div class="row pt-4 pb-3">
