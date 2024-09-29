@@ -40,6 +40,10 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
+            @*Add the notification partial view it will display the msg all the pages  like created succesfully and updated and deleted successfully*@
+
+            <partial name="_NotificationPartial" />
+
             @RenderBody()
         </main>
     </div>
