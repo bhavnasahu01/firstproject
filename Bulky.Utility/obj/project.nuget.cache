@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "DajHtITKjaQskFlRzEQj67f1hadwK8SNcyZzmcdlM6h4LC644sl3vmdMk+pErtszER0verF1gI4PMGsxs+/uBw==",
+  "success": true,
+  "projectFilePath": "/Users/apple/Desktop/Bulky/Bulky.Utility/Bulky.Utility.csproj",
+  "expectedPackageFiles": [
+    "/Users/apple/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.31/microsoft.aspnetcore.app.ref.6.0.31.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.netcore.app.ref/6.0.31/microsoft.netcore.app.ref.6.0.31.nupkg.sha512"
+  ],
+  "logs": []
+}
